@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Graphics Editor</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        #canvas {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Графический редактор</h1>
+    <form>
+        <input type="radio" id="circle" name="shape" value="circle">
+        <label for="circle">Круг</label>
+        <input type="radio" id="rectangle" name="shape" value="rectangle">
+        <label for="rectangle">Прямоугольник</label>
+    </form>
+    <canvas id="canvas" width="800" height="500" style="border: 1px solid black;"></canvas>
+    <script src="draw.js">
+    </script>
+</body>
+</html>

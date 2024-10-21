@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини графический редактор</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        #canvas {
+            border: 1px solid #ccc;
+            width: 80%;
+            height: 400px;
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Графический редактор</h1>
+    <div>
+        <button id="circleBtn">Рисовать круг</button>
+        <button id="rectangleBtn">Рисовать квадрат</button>
+    </div>
+    <div>
+        <button class="colorBtn" data-color="green">Зеленый</button>
+        <button class="colorBtn" data-color="red">Красный</button>
+        <button class="colorBtn" data-color="blue">Синий</button>
+    </div>
+    <svg id="canvas"></svg>
+    <script src="draw.js"></script>
+</body>
+</html>
